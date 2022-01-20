@@ -1,3 +1,5 @@
+"use strict";
+
 document
     .querySelectorAll(".drum")
     .forEach((el) =>
@@ -23,7 +25,6 @@ function playSound(letter) {
 
 function buttonAnimation(letter) {
     let activeButton = document.querySelector(`.${letter}`);
-    // console.log(activeButton);
     activeButton.classList.add("pressed");
     setTimeout(() => {
         activeButton.classList.remove("pressed");
